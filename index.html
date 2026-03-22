@@ -3,274 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ibrahim Abdillahi — Portfolio</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <span class="brand-name">Ibrahim Abdillahi</span>
-      <span class="brand-role">— Student Developer</span>
+  <!-- Netflix-style intro -->
+  <section class="intro-screen" id="home">
+    <h1 class="intro-title">My Portfolio</h1>
+
+    <div class="profile-grid">
+      <a href="#work" class="profile-card">
+        <div class="profile-icon red">W</div>
+        <span>Work</span>
+      </a>
+
+      <a href="#about" class="profile-card">
+        <div class="profile-icon blue">A</div>
+        <span>About</span>
+      </a>
+
+      <a href="#resume" class="profile-card">
+        <div class="profile-icon green">R</div>
+        <span>Resume</span>
+      </a>
+
+      <a href="#education" class="profile-card">
+        <div class="profile-icon yellow">E</div>
+        <span>Education</span>
+      </a>
+
+      <a href="#contact" class="profile-card">
+        <div class="profile-icon purple">C</div>
+        <span>Contact</span>
+      </a>
     </div>
+  </section>
 
-    <nav class="nav">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#resume">Resume</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">George Brown College Portfolio</p>
-      <p>
-        I build student-focused digital projects,
-        explore software development,
-        and create work that is practical, clear, and user-centered.
-      </p>
-      <p class="hero-copy">
-        I am a Computer Programming and Analysis student building skills in
-        web development, software design, technical support, and project work.
-        This portfolio highlights my academic experience, selected projects,
-        education, and professional background.
-      </p>
-
-      <div class="hero-meta">
-        <div>
-          <span class="meta-label">Current Focus</span>
-          <p>Portfolio Development, Software Projects, UI/UX, Technical Support</p>
-        </div>
-        <div>
-          <span class="meta-label">Program</span>
-          <p>Computer Programming and Analysis</p>
-        </div>
+  <!-- Actual portfolio content -->
+  <main class="content">
+    <nav class="top-nav">
+      <div class="logo">Ibrahim Abdillahi</div>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
-    </section>
+    </nav>
 
     <section id="work" class="section">
-      <div class="section-head">
-        <p class="section-kicker">Selected Academic Work</p>
-        <h2>Projects and portfolio pieces</h2>
-      </div>
-
-      <div class="work-list">
-        <article class="work-item">
-          <div class="work-number">01</div>
-          <div class="work-content">
-            <h3>Dormio Capstone Project</h3>
-            <p>
-              A student-focused project developed as part of academic work,
-              including planning, requirements, interface ideas, and development direction.
-            </p>
-            <span class="work-tag">Capstone</span>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-number">02</div>
-          <div class="work-content">
-            <h3>Project Summary & Vision</h3>
-            <p>
-              A concise overview of the project purpose, intended users, problem space,
-              and the larger vision behind the solution.
-            </p>
-            <span class="work-tag">Documentation</span>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-number">03</div>
-          <div class="work-content">
-            <h3>Business & System Requirements</h3>
-            <p>
-              Functional and non-functional requirements, system goals, and development needs
-              created as part of software planning and analysis work.
-            </p>
-            <span class="work-tag">Requirements</span>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-number">04</div>
-          <div class="work-content">
-            <h3>Project Plan & Status Reports</h3>
-            <p>
-              Timeline-based work including milestones, progress tracking,
-              sprint thinking, and implementation updates.
-            </p>
-            <span class="work-tag">Planning</span>
-          </div>
-        </article>
-
-        <article class="work-item">
-          <div class="work-number">05</div>
-          <div class="work-content">
-            <h3>Design, Wireframes & Implementation</h3>
-            <p>
-              Interface concepts, mockups, workflow thinking, and code-based implementation
-              work that supports portfolio-ready project presentation.
-            </p>
-            <span class="work-tag">Design + Build</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section split-section">
-      <div class="section-head narrow">
-        <p class="section-kicker">About</p>
-        <h2>Who I am</h2>
-      </div>
-
-      <div class="split-grid">
-        <div>
+      <h2>Work</h2>
+      <div class="card-grid">
+        <div class="info-card">
+          <h3>Dormio Capstone Project</h3>
           <p>
-            I am a motivated student with a background in customer service,
-            service desk support, teamwork, and high-responsibility environments.
-            My experience has helped me build communication, patience, time management,
-            and the ability to stay effective under pressure.
-          </p>
-          <p>
-            I am especially interested in software development, digital product work,
-            and building projects that solve real problems for real users.
-            My goal is to keep improving my technical skills while creating work that feels polished,
-            useful, and professional.
+            A student-focused project built around solving everyday dorm-related needs
+            through a digital platform and better user experience.
           </p>
         </div>
 
-        <aside class="info-panel">
-          <h3>Quick Facts</h3>
-          <ul>
-            <li>Based in Toronto, Ontario</li>
-            <li>Student Developer</li>
-            <li>Interested in Web & Software Development</li>
-            <li>Building academic and portfolio projects</li>
-          </ul>
-        </aside>
+        <div class="info-card">
+          <h3>Project Planning</h3>
+          <p>
+            Includes project summaries, planning documents, requirements, and academic
+            deliverables connected to software development work.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Design & Implementation</h3>
+          <p>
+            Covers wireframes, interface ideas, app structure, and coding work developed
+            during coursework and capstone activities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="single-card">
+        <p>
+          I am a Computer Programming and Analysis student focused on software development,
+          portfolio building, and practical digital solutions. My background in customer
+          service and technical support has helped me build strong communication, teamwork,
+          and problem-solving skills.
+        </p>
       </div>
     </section>
 
     <section id="resume" class="section">
-      <div class="section-head">
-        <p class="section-kicker">Resume</p>
-        <h2>Experience and strengths</h2>
-      </div>
-
-      <div class="cards">
-        <article class="card">
+      <h2>Resume</h2>
+      <div class="card-grid">
+        <div class="info-card">
           <h3>Technical Skills</h3>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Windows, Android, iOS, macOS</li>
-            <li>Microsoft Office 365</li>
-            <li>Team collaboration and communication</li>
-            <li>Time management and coordination</li>
-          </ul>
-        </article>
+          <p>HTML, CSS, JavaScript, Windows, Android, iOS, macOS, Microsoft Office 365</p>
+        </div>
 
-        <article class="card">
-          <h3>Professional Summary</h3>
+        <div class="info-card">
+          <h3>Professional Background</h3>
           <p>
-            I bring experience from customer-facing and service-oriented roles,
-            along with academic training in programming and digital project work.
-            I value reliability, clear communication, and steady growth.
+            Experience in service desk support, customer service, and fast-paced work
+            environments requiring attention to detail and teamwork.
           </p>
-        </article>
+        </div>
 
-        <article class="card">
+        <div class="info-card">
           <h3>Career Goal</h3>
           <p>
-            I want to build a career where I can combine technical knowledge,
-            problem-solving, and teamwork to create useful digital solutions
-            and continue growing as a software professional.
+            To grow as a software professional by building useful digital products
+            and improving my technical and creative skills.
           </p>
-        </article>
+        </div>
       </div>
     </section>
 
     <section id="education" class="section">
-      <div class="section-head">
-        <p class="section-kicker">Education</p>
-        <h2>Academic credentials</h2>
-      </div>
+      <h2>Education</h2>
+      <div class="card-grid">
+        <div class="info-card">
+          <h3>George Brown College</h3>
+          <p>Computer Programming and Analysis</p>
+          <p>2022 – 2025</p>
+        </div>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-year">2022 — 2025</span>
-          <div>
-            <h3>Computer Programming and Analysis</h3>
-            <p>George Brown College</p>
-          </div>
-        </article>
+        <div class="info-card">
+          <h3>George Brown College</h3>
+          <p>Human Resource Management</p>
+          <p>2025 – Present</p>
+        </div>
 
-        <article class="timeline-item">
-          <span class="timeline-year">2025 — Present</span>
-          <div>
-            <h3>Human Resource Management</h3>
-            <p>George Brown College</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <span class="timeline-year">2020 — 2021</span>
-          <div>
-            <h3>Emergency and Disaster Management</h3>
-            <p>York University</p>
-          </div>
-        </article>
+        <div class="info-card">
+          <h3>York University</h3>
+          <p>Emergency and Disaster Management</p>
+          <p>2020 – 2021</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-head">
-        <p class="section-kicker">Professional Experience</p>
-        <h2>Previous roles</h2>
-      </div>
-
-      <div class="experience-list">
-        <article class="experience-item">
-          <h3>Airline Groomer</h3>
-          <p class="experience-meta">Delta Facilities Maintenance · 2022 — Present</p>
-          <p>
-            Worked in a fast-paced environment supporting aircraft turnaround,
-            coordination, and operational efficiency while meeting strict timelines.
-          </p>
-        </article>
-
-        <article class="experience-item">
-          <h3>Service Desk Analyst</h3>
-          <p class="experience-meta">2022</p>
-          <p>
-            Investigated procedural and system-related issues, classified incidents,
-            and supported timely troubleshooting and escalation.
-          </p>
-        </article>
-
-        <article class="experience-item">
-          <h3>Customer Service Agent</h3>
-          <p class="experience-meta">2022</p>
-          <p>
-            Helped clients using updated guidance and support processes
-            while handling pressure, pace, and large volumes of communication.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <p class="section-kicker">Contact</p>
-      <h2>Let’s connect</h2>
-      <p class="contact-copy">
-        You can reach out for academic collaboration, project discussion,
-        or portfolio opportunities.
-      </p>
-
-      <div class="contact-links">
-        <a href="mailto:Ibrahimabdillahi2222@gmail.com">IbrahimAli@Icarforyou.com</a>
-        <a href="tel:+1647234Idontknow">(647)234Idontknow</a>
-        <a href="https://github.com/Ibazone" target="_blank">GitHub</a>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="single-card">
+        <p><strong>Email:</strong> Ibrahimabdillahi2222@gmail.com</p>
+        <p><strong>Phone:</strong> (647) 709-5570</p>
+        <p><strong>GitHub:</strong> github.com/Ibazone</p>
       </div>
     </section>
   </main>
