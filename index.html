@@ -6,150 +6,44 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Netflix-style intro -->
-  <section class="intro-screen" id="home">
-    <h1 class="intro-title">My Portfolio</h1>
+<body class="home-body">
+  <div class="bg-overlay"></div>
+
+  <section class="intro-screen">
+    <p class="intro-subtitle fade-in">Welcome</p>
+    <h1 class="intro-title fade-in">My Portfolio</h1>
+    <p class="intro-text fade-in">
+      Select a section to explore my academic work, background, experience, and contact information.
+    </p>
 
     <div class="profile-grid">
-      <a href="#work" class="profile-card">
+      <a href="work.html" class="profile-card fade-up" style="animation-delay: 0.1s;">
         <div class="profile-icon red">W</div>
         <span>Work</span>
       </a>
 
-      <a href="#about" class="profile-card">
+      <a href="about.html" class="profile-card fade-up" style="animation-delay: 0.2s;">
         <div class="profile-icon blue">A</div>
         <span>About</span>
       </a>
 
-      <a href="#resume" class="profile-card">
+      <a href="resume.html" class="profile-card fade-up" style="animation-delay: 0.3s;">
         <div class="profile-icon green">R</div>
         <span>Resume</span>
       </a>
 
-      <a href="#education" class="profile-card">
+      <a href="education.html" class="profile-card fade-up" style="animation-delay: 0.4s;">
         <div class="profile-icon yellow">E</div>
         <span>Education</span>
       </a>
 
-      <a href="#contact" class="profile-card">
+      <a href="contact.html" class="profile-card fade-up" style="animation-delay: 0.5s;">
         <div class="profile-icon purple">C</div>
         <span>Contact</span>
       </a>
     </div>
   </section>
 
-  <!-- Actual portfolio content -->
-  <main class="content">
-    <nav class="top-nav">
-      <div class="logo">Ibrahim Abdillahi</div>
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#resume">Resume</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <section id="work" class="section">
-      <h2>Work</h2>
-      <div class="card-grid">
-        <div class="info-card">
-          <h3>Dormio Capstone Project</h3>
-          <p>
-            A student-focused project built around solving everyday dorm-related needs
-            through a digital platform and better user experience.
-          </p>
-        </div>
-
-        <div class="info-card">
-          <h3>Project Planning</h3>
-          <p>
-            Includes project summaries, planning documents, requirements, and academic
-            deliverables connected to software development work.
-          </p>
-        </div>
-
-        <div class="info-card">
-          <h3>Design & Implementation</h3>
-          <p>
-            Covers wireframes, interface ideas, app structure, and coding work developed
-            during coursework and capstone activities.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About</h2>
-      <div class="single-card">
-        <p>
-          I am a Computer Programming and Analysis student focused on software development,
-          portfolio building, and practical digital solutions. My background in customer
-          service and technical support has helped me build strong communication, teamwork,
-          and problem-solving skills.
-        </p>
-      </div>
-    </section>
-
-    <section id="resume" class="section">
-      <h2>Resume</h2>
-      <div class="card-grid">
-        <div class="info-card">
-          <h3>Technical Skills</h3>
-          <p>HTML, CSS, JavaScript, Windows, Android, iOS, macOS, Microsoft Office 365</p>
-        </div>
-
-        <div class="info-card">
-          <h3>Professional Background</h3>
-          <p>
-            Experience in service desk support, customer service, and fast-paced work
-            environments requiring attention to detail and teamwork.
-          </p>
-        </div>
-
-        <div class="info-card">
-          <h3>Career Goal</h3>
-          <p>
-            To grow as a software professional by building useful digital products
-            and improving my technical and creative skills.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="card-grid">
-        <div class="info-card">
-          <h3>George Brown College</h3>
-          <p>Computer Programming and Analysis</p>
-          <p>2022 – 2025</p>
-        </div>
-
-        <div class="info-card">
-          <h3>George Brown College</h3>
-          <p>Human Resource Management</p>
-          <p>2025 – Present</p>
-        </div>
-
-        <div class="info-card">
-          <h3>York University</h3>
-          <p>Emergency and Disaster Management</p>
-          <p>2020 – 2021</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="single-card">
-        <p><strong>Email:</strong> Ibrahimabdillahi2222@gmail.com</p>
-        <p><strong>Phone:</strong> (647) 709-5570</p>
-        <p><strong>GitHub:</strong> github.com/Ibazone</p>
-      </div>
-    </section>
-  </main>
+  <script src="script.js"></script>
 </body>
 </html>
