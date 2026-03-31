@@ -1,240 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capstone Documents | My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .docs-page {
-      min-height: 100vh;
-      background:
-        linear-gradient(to bottom, rgba(229, 9, 20, 0.08), transparent 220px),
-        #0f0f0f;
-      padding: 40px 20px 70px;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>Dormio Capstone</title>
+    <link rel="stylesheet" href="style.css">
 
-    .docs-container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
+    <style>
+        body {
+            background: #141414;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-    .docs-header {
-      margin-bottom: 35px;
-    }
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
 
-    .docs-header h1 {
-      font-size: clamp(2.4rem, 6vw, 4.2rem);
-      margin-bottom: 12px;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
+        .top-buttons a {
+            padding: 10px 18px;
+            margin-right: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    .docs-header p {
-      max-width: 850px;
-      color: #d1d5db;
-      line-height: 1.6;
-    }
+        .btn-main {
+            background: red;
+            color: white;
+        }
 
-    .docs-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-    }
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
 
-    .doc-card {
-      background: linear-gradient(180deg, #1a1a1a, #131313);
-      border: 1px solid #2a2a2a;
-      border-radius: 18px;
-      padding: 22px;
-      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    }
+        .container {
+            margin-top: 100px;
+        }
 
-    .doc-card:hover {
-      transform: translateY(-4px);
-      border-color: #e50914;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
-    }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
 
-    .doc-card h2 {
-      font-size: 1.35rem;
-      margin-bottom: 8px;
-    }
+        .doc-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-    .doc-card p {
-      color: #d1d5db;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
+        .doc-card {
+            background: #222;
+            padding: 30px;
+            border-radius: 10px;
+            width: 200px;
+            transition: 0.3s;
+        }
 
-    .doc-actions {
-      margin-bottom: 18px;
-    }
+        .doc-card:hover {
+            transform: scale(1.05);
+            background: #333;
+        }
 
-    .doc-btn {
-      display: inline-block;
-      background: #e50914;
-      color: white;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
+        .doc-card a {
+            text-decoration: none;
+            color: white;
+        }
 
-    .doc-btn:hover {
-      opacity: 0.9;
-    }
-
-    .doc-preview {
-      width: 100%;
-      height: 420px;
-      border: none;
-      border-radius: 10px;
-      background: #fff;
-    }
-
-    .page-nav-custom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 45px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #222;
-    }
-
-    .page-nav-custom a {
-      color: #f3f4f6;
-      text-decoration: none;
-    }
-
-    .page-nav-custom .back-link {
-      color: #e50914;
-      font-weight: bold;
-    }
-
-    .page-nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .page-nav-custom a:hover {
-      color: #e50914;
-    }
-
-    @media (max-width: 1000px) {
-      .docs-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .doc-preview {
-        height: 360px;
-      }
-    }
-  </style>
+        .doc-title {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-<body class="docs-page">
-  <div class="docs-container">
 
-    <div class="page-nav-custom">
-      <a href="index.html" class="back-link">← Back to Home</a>
-      <div class="page-nav-links">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
+<body>
 
-    <div class="docs-header">
-      <h1>Capstone Documents</h1>
-      <p>
-        This section presents the main project documents for my capstone work.
-        Each document can be opened as a PDF and previewed directly on this page.
-      </p>
-    </div>
+<!-- TOP BUTTONS -->
+<div class="top-buttons">
+    <a href="F24_T12_Project_Summary.docx.pdf" target="_blank" class="btn-main">Summary</a>
+    <a href="F24_T12-Project_Vision.docx.pdf" target="_blank" class="btn-outline">Vision</a>
+</div>
 
-    <div class="docs-grid">
+<div class="container">
+    <h1>Dormio Capstone Project</h1>
 
-      <div class="doc-card">
-        <h2>Project Summary</h2>
-        <p>A high-level overview of the project, purpose, users, and main goals.</p>
-        <div class="doc-actions">
-          <a href="project-summary.pdf" target="_blank" class="doc-btn">Open PDF</a>
+    <div class="doc-grid">
+
+        <div class="doc-card">
+            <a href="F24_T12_Project_Summary.docx.pdf" target="_blank">
+                📄
+                <div class="doc-title">Project Summary</div>
+            </a>
         </div>
-        <iframe src="project-summary.pdf" class="doc-preview"></iframe>
-      </div>
 
-      <div class="doc-card">
-        <h2>Project Vision</h2>
-        <p>The project vision explains the long-term direction and intended value of the solution.</p>
-        <div class="doc-actions">
-          <a href="project-vision.pdf" target="_blank" class="doc-btn">Open PDF</a>
+        <div class="doc-card">
+            <a href="F24_T12-Project_Vision.docx.pdf" target="_blank">
+                📘
+                <div class="doc-title">Project Vision</div>
+            </a>
         </div>
-        <iframe src="project-vision.pdf" class="doc-preview"></iframe>
-      </div>
 
-      <div class="doc-card">
-        <h2>Business Requirements</h2>
-        <p>This document outlines the core business needs, project scope, and required outcomes.</p>
-        <div class="doc-actions">
-          <a href="business-requirements.pdf" target="_blank" class="doc-btn">Open PDF</a>
+        <div class="doc-card">
+            <a href="F24-T12-Project Plan.docx.pdf" target="_blank">
+                📊
+                <div class="doc-title">Project Plan</div>
+            </a>
         </div>
-        <iframe src="business-requirements.pdf" class="doc-preview"></iframe>
-      </div>
 
-      <div class="doc-card">
-        <h2>Project Plan</h2>
-        <p>The project plan covers scheduling, milestones, responsibilities, and major deliverables.</p>
-        <div class="doc-actions">
-          <a href="project-plan.pdf" target="_blank" class="doc-btn">Open PDF</a>
+        <div class="doc-card">
+            <a href="F24-T12-Sprint Backlog.pdf" target="_blank">
+                📋
+                <div class="doc-title">Sprint Backlog</div>
+            </a>
         </div>
-        <iframe src="project-plan.pdf" class="doc-preview"></iframe>
-      </div>
 
-      <div class="doc-card">
-        <h2>Requirements Analysis and Design</h2>
-        <p>This file includes system requirements, analysis, architecture, and design thinking.</p>
-        <div class="doc-actions">
-          <a href="requirements-analysis-design.pdf" target="_blank" class="doc-btn">Open PDF</a>
+        <div class="doc-card">
+            <a href="F24-T12-Dormio-Presentation.pdf" target="_blank">
+                🎤
+                <div class="doc-title">Presentation</div>
+            </a>
         </div>
-        <iframe src="requirements-analysis-design.pdf" class="doc-preview"></iframe>
-      </div>
-
-      <div class="doc-card">
-        <h2>Wireframes / Mockups</h2>
-        <p>A visual representation of the interface layout, user flow, and page design ideas.</p>
-        <div class="doc-actions">
-          <a href="wireframes-mockups.pdf" target="_blank" class="doc-btn">Open PDF</a>
-        </div>
-        <iframe src="wireframes-mockups.pdf" class="doc-preview"></iframe>
-      </div>
-
-      <div class="doc-card">
-        <h2>Technology Requirements</h2>
-        <p>This document explains the selected tools, platforms, frameworks, and technical choices.</p>
-        <div class="doc-actions">
-          <a href="technology-requirements.pdf" target="_blank" class="doc-btn">Open PDF</a>
-        </div>
-        <iframe src="technology-requirements.pdf" class="doc-preview"></iframe>
-      </div>
-
-      <div class="doc-card">
-        <h2>Final Report</h2>
-        <p>The final report summarizes the completed project, outcomes, challenges, and reflection.</p>
-        <div class="doc-actions">
-          <a href="final-report.pdf" target="_blank" class="doc-btn">Open PDF</a>
-        </div>
-        <iframe src="final-report.pdf" class="doc-preview"></iframe>
-      </div>
 
     </div>
-  </div>
+</div>
+
 </body>
 </html>
