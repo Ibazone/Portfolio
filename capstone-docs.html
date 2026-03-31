@@ -1,133 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dormio Capstone</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dormio Capstone | Ibrahim Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .capstone-hero {
+      margin-bottom: 30px;
+    }
 
-    <style>
-        body {
-            background: #141414;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+    .doc-button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0 36px;
+    }
 
-        .top-buttons {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
+    .doc-button {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      background: #e50914;
+      color: #fff;
+      transition: 0.25s ease;
+    }
 
-        .top-buttons a {
-            padding: 10px 18px;
-            margin-right: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .doc-button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
 
-        .btn-main {
-            background: red;
-            color: white;
-        }
+    .doc-button.secondary {
+      background: transparent;
+      border: 1px solid #aaa;
+      color: #fff;
+    }
 
-        .btn-outline {
-            border: 1px solid white;
-            color: white;
-        }
+    .doc-section {
+      margin-bottom: 34px;
+    }
 
-        .container {
-            margin-top: 100px;
-        }
+    .doc-section h2 {
+      margin-bottom: 10px;
+    }
 
-        h1 {
-            font-size: 50px;
-            margin-bottom: 40px;
-        }
+    .doc-section p {
+      color: #d1d5db;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
 
-        .doc-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+    .pdf-frame {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      background: #111;
+    }
 
-        .doc-card {
-            background: #222;
-            padding: 30px;
-            border-radius: 10px;
-            width: 200px;
-            transition: 0.3s;
-        }
-
-        .doc-card:hover {
-            transform: scale(1.05);
-            background: #333;
-        }
-
-        .doc-card a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .doc-title {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-    </style>
+    @media (max-width: 768px) {
+      .pdf-frame {
+        height: 650px;
+      }
+    }
+  </style>
 </head>
-
-<body>
-
-<!-- TOP BUTTONS -->
-<div class="top-buttons">
-    <a href="F24_T12_Project_Summary.docx.pdf" target="_blank" class="btn-main">Summary</a>
-    <a href="F24_T12-Project_Vision.docx.pdf" target="_blank" class="btn-outline">Vision</a>
-</div>
-
-<div class="container">
-    <h1>Dormio Capstone Project</h1>
-
-    <div class="doc-grid">
-
-        <div class="doc-card">
-            <a href="F24_T12_Project_Summary.docx.pdf" target="_blank">
-                📄
-                <div class="doc-title">Project Summary</div>
-            </a>
-        </div>
-
-        <div class="doc-card">
-            <a href="F24_T12-Project_Vision.docx.pdf" target="_blank">
-                📘
-                <div class="doc-title">Project Vision</div>
-            </a>
-        </div>
-
-        <div class="doc-card">
-            <a href="F24-T12-Project Plan.docx.pdf" target="_blank">
-                📊
-                <div class="doc-title">Project Plan</div>
-            </a>
-        </div>
-
-        <div class="doc-card">
-            <a href="F24-T12-Sprint Backlog.pdf" target="_blank">
-                📋
-                <div class="doc-title">Sprint Backlog</div>
-            </a>
-        </div>
-
-        <div class="doc-card">
-            <a href="F24-T12-Dormio-Presentation.pdf" target="_blank">
-                🎤
-                <div class="doc-title">Presentation</div>
-            </a>
-        </div>
-
+<body class="page">
+  <div class="page-container">
+    <div class="page-nav">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <div class="page-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-</div>
 
+    <div class="capstone-hero">
+      <h1 class="fade-in">Dormio Capstone Project</h1>
+      <p class="page-intro fade-in">
+        This section contains the core Dormio capstone documents, including the project summary,
+        vision, plan, sprint backlog, presentation, and requirements analysis.
+      </p>
+    </div>
+
+    <div class="page-card fade-up">
+      <h2>Open Documents</h2>
+      <p>
+        You can open any file in a new tab or scroll through the PDFs directly below.
+      </p>
+
+      <div class="doc-button-row">
+        <a href="ProjectSummary.pdf" target="_blank" class="doc-button">Project Summary</a>
+        <a href="F24_T12-Project_Vision.docx.pdf" target="_blank" class="doc-button secondary">Project Vision</a>
+        <a href="F24-T12-Project Plan.docx.pdf" target="_blank" class="doc-button">Project Plan</a>
+        <a href="F24-T12-Sprint Backlog.pdf" target="_blank" class="doc-button secondary">Sprint Backlog</a>
+        <a href="F24_T12_Requirements Analysis and Design.docx.pdf" target="_blank" class="doc-button">Requirements Analysis</a>
+        <a href="F24-T12-Dormio-Presentation.pdf" target="_blank" class="doc-button secondary">Presentation</a>
+      </div>
+    </div>
+
+    <div class="page-card fade-up doc-section" style="animation-delay: 0.1s;">
+      <h2>Project Summary</h2>
+      <p>
+        Overview of Dormio’s purpose, student challenges, desired outcomes, and MVP deliverables.
+      </p>
+      <iframe
+        class="pdf-frame"
+        src="ProjectSummary.pdf"
+        title="Project Summary PDF">
+      </iframe>
+    </div>
+
+    <div class="page-card fade-up doc-section" style="animation-delay: 0.2s;">
+      <h2>Project Vision</h2>
+      <p>
+        Covers Dormio’s scope, positioning, stakeholders, user descriptions, and key system features.
+      </p>
+      <iframe
+        class="pdf-frame"
+        src="F24_T12-Project_Vision.docx.pdf"
+        title="Project Vision PDF">
+      </iframe>
+    </div>
+
+    <div class="page-card fade-up doc-section" style="animation-delay: 0.3s;">
+      <h2>Project Plan</h2>
+      <p>
+        Includes scope, deliverables, assumptions, dependencies, risks, and project planning details.
+      </p>
+      <iframe
+        class="pdf-frame"
+        src="F24-T12-Project Plan.docx.pdf"
+        title="Project Plan PDF">
+      </iframe>
+    </div>
+
+    <div class="page-card fade-up doc-section" style="animation-delay: 0.4s;">
+      <h2>Sprint Backlog</h2>
+      <p>
+        Shows the planned sprint tasks and story points across the Dormio project sprints.
+      </p>
+      <iframe
+        class="pdf-frame"
+        src="F24-T12-Sprint Backlog.pdf"
+        title="Sprint Backlog PDF">
+      </iframe>
+    </div>
+
+    <div class="page-card fade-up doc-section" style="animation-delay: 0.5s;">
+      <h2>Requirements Analysis and Design</h2>
+      <p>
+        Includes Dormio’s functional requirements, use cases, non-functional requirements,
+        database requirements, and design diagrams.
+      </p>
+      <iframe
+        class="pdf-frame"
+        src="F24_T12_Requirements Analysis and Design.docx.pdf"
+        title="Requirements Analysis and Design PDF">
+      </iframe>
+    </div>
+
+    <div class="page-card fade-up doc-section" style="animation-delay: 0.6s;">
+      <h2>Presentation</h2>
+      <p>
+        Final presentation slides summarizing the Dormio concept, features, scope, and project work.
+      </p>
+      <iframe
+        class="pdf-frame"
+        src="F24-T12-Dormio-Presentation.pdf"
+        title="Dormio Presentation PDF">
+      </iframe>
+    </div>
+  </div>
 </body>
 </html>
